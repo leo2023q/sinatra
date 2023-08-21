@@ -1,0 +1,8 @@
+<h1>TALLERES </h1>
+
+<% @files.drop(2).each do |file_name| %>
+  <a href="/<%= File.basename(file_name, ".*")%>"><%= File.basename(file_name, ".*")%></a><br>  
+<% end %>
+<br><a href="/create">Nuevo taller</a>
+
+
